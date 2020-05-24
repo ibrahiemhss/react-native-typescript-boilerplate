@@ -1,7 +1,26 @@
 {
   "name": "awesome-app",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jafaronly/react-native-typescript-boilerplate.git"
+  },
+  "keywords": [
+    "react-native-typescript-boilerplate",
+    "boilerplate",
+    "react-native-typescript",
+    "react-native",
+    "typescript",
+    "redux",
+    "redux-saga"
+  ],
+  "description": "React Native Boilerplate, TypeScript with @react-native-navigation and redux-saga",
+  "author": {
+    "name": "Jafar Jabr",
+    "email": "jafar.jabr.dev@gmail.com",
+    "url": "https://github.com/jafaronly"
+  },
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
