@@ -3,6 +3,7 @@ import GlobalLtrStyle from '../../styles/global.ltr.style';
 import * as NavigationService from '../../services/navigationService';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
+
 const HamburgerButton = (): JSX.Element => (
   <Icon
     name="bars"
