@@ -3,7 +3,7 @@ import Colors from '../themes/Colors';
 
 const HomePageLtrStyle = StyleSheet.create({
   scrollView: {
-    backgroundColor: Colors.lighter,
+    backgroundColor: Colors.nearlyWhite,
   },
   engine: {
     position: 'absolute',
@@ -25,13 +25,13 @@ const HomePageLtrStyle = StyleSheet.create({
     marginTop: 8,
     fontSize: 18,
     fontWeight: '400',
-    color: Colors.dark,
+    color: Colors.black,
   },
   highlight: {
     fontWeight: '700',
   },
   footer: {
-    color: Colors.dark,
+    color: Colors.black,
     fontSize: 12,
     fontWeight: '600',
     padding: 4,

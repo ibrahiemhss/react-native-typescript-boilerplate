@@ -1,5 +1,5 @@
-import {Colors, Fonts} from '../../shared/themes';
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
+import { Colors, Fonts } from '../themes';
 
 const NavigationLtrStyle = StyleSheet.create({
   MenuIcon: {
@@ -23,7 +23,7 @@ const NavigationLtrStyle = StyleSheet.create({
     paddingVertical: 10,
   },
   HeaderView: {
-    backgroundColor: Colors.Yellow,
+    backgroundColor: Colors.primaryLight,
     color: Colors.white,
     flexDirection: 'row',
     alignItems: 'center',
@@ -51,7 +51,7 @@ const NavigationLtrStyle = StyleSheet.create({
     marginBottom: 5,
   },
   AppVersion: {
-    color: Colors.Purple,
+    color: Colors.primaryDark,
     backgroundColor: Colors.white,
     textAlign: 'left',
     fontSize: Fonts.tiny,
@@ -60,7 +60,7 @@ const NavigationLtrStyle = StyleSheet.create({
     paddingHorizontal: 20,
   },
   UserAvatar: {
-    color: Colors.Purple,
+    color: Colors.primary,
     textAlign: 'center',
     fontSize: Fonts.h6,
     fontWeight: '800',
@@ -86,22 +86,22 @@ const NavigationLtrStyle = StyleSheet.create({
     flexDirection: 'row',
   },
   UserText: {
-    color: Colors.Purple,
+    color: Colors.darkText,
     fontSize: Fonts.medium,
     textTransform: 'capitalize',
   },
   UserEmail: {
-    color: Colors.Purple,
+    color: Colors.darkText,
     fontSize: Fonts.small,
     marginTop: 5,
   },
   UserRating: {
-    color: Colors.Purple,
+    color: Colors.darkText,
     fontSize: Fonts.small,
     marginHorizontal: 2,
   },
   ReviewsText: {
-    color: Colors.Purple,
+    color: Colors.darkText,
     fontSize: Fonts.small,
   },
   MenuSafeAreaView: {
@@ -116,10 +116,10 @@ const NavigationLtrStyle = StyleSheet.create({
     paddingHorizontal: 20,
     alignItems: 'center',
     justifyContent: 'flex-start',
-    backgroundColor: Colors.GreyBackground,
+    backgroundColor: Colors.greyBackground,
   },
   FooterLabel: {
-    color: Colors.Purple,
+    color: Colors.darkText,
     fontWeight: '200',
     marginHorizontal: 0,
     marginVertical: 0,
@@ -138,11 +138,11 @@ const NavigationLtrStyle = StyleSheet.create({
   },
   LogoutIcon: {
     fontSize: Fonts.medium,
-    color: Colors.Purple,
+    color: Colors.darkText,
   },
   FlexedYellowView: {
     flex: 1,
-    backgroundColor: Colors.Yellow,
+    backgroundColor: Colors.primary,
   },
   RatingWrapper: {
     flexDirection: 'row',

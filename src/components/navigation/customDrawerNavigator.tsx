@@ -54,7 +54,7 @@ const CustomDrawerNavigator = () => {
                 {section.data.map((item) => (
                   <TouchableOpacity key={item.title} onPress={item.onclick}>
                     <View style={NavigationLtrStyle.OrderItemMenu}>
-                      <Icon style={NavigationLtrStyle.MenuIcon} name="home" />
+                      <Icon style={NavigationLtrStyle.MenuItem} name="home" />
                       <Text style={NavigationLtrStyle.MenuItem}>{item.title}</Text>
                     </View>
                   </TouchableOpacity>

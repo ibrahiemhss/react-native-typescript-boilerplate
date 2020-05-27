@@ -9,7 +9,7 @@ const UserAvatarLtrStyle = StyleSheet.create({
   UserImageWrapper: {
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: Colors.GreyBackground,
+    backgroundColor: Colors.greyBackground,
     borderRadius: 100,
   },
 });
