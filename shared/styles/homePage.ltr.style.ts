@@ -54,7 +54,7 @@ const HomePageLtrStyle = StyleSheet.create({
     paddingVertical: 0,
   },
   greeting: {
-    color: '#999',
+    color: '#81C784',
     fontWeight: 'bold',
   },
   logo: {

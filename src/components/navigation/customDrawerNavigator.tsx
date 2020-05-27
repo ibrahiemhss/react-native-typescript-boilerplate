@@ -1,12 +1,12 @@
 import React from 'react';
 import { Text, Platform, ScrollView, TouchableOpacity, View } from 'react-native';
-import { Divider } from 'react-native-elements';
+import { Divider, Icon } from 'react-native-elements';
 import { useDispatch } from 'react-redux';
 import SafeAreaView from 'react-native-safe-area-view';
 import { version } from '../../../package.json';
 import I18n from '../../../shared/I18n/I18n';
 import { requestLogout } from '../../redux/actions/loginActions';
-import { Icons } from '../../../shared/themes';
+
 import NavigationLtrStyle from '../../../shared/styles/navigation.ltr.style';
 import UserAvatar from '../../../shared/components/sections/userAvatar';
 import customDrawerRoutes from './customDrawerRoutes';
@@ -54,7 +54,7 @@ const CustomDrawerNavigator = () => {
                 {section.data.map((item) => (
                   <TouchableOpacity key={item.title} onPress={item.onclick}>
                     <View style={NavigationLtrStyle.OrderItemMenu}>
-                      <Icons style={NavigationLtrStyle.MenuIcon} name={item.icon} />
+                      <Icon style={NavigationLtrStyle.MenuIcon} name="home" />
                       <Text style={NavigationLtrStyle.MenuItem}>{item.title}</Text>
                     </View>
                   </TouchableOpacity>
@@ -78,7 +78,7 @@ const CustomDrawerNavigator = () => {
       <TouchableOpacity onPress={logout}>
         <View style={NavigationLtrStyle.FooterWrapper}>
           <View style={NavigationLtrStyle.FooterIconView}>
-            <Icons style={NavigationLtrStyle.LogoutIcon} name="logout" />
+            <Icon style={NavigationLtrStyle.MenuIcon} name="home" />
           </View>
           <Text style={NavigationLtrStyle.FooterLabel}>{I18n.t('logout_button')}</Text>
         </View>
@@ -91,7 +91,7 @@ const CustomDrawerNavigator = () => {
       <TouchableOpacity onPress={logout}>
         <View style={NavigationLtrStyle.FooterWrapper}>
           <View style={NavigationLtrStyle.FooterIconView}>
-            <Icons style={NavigationLtrStyle.LogoutIcon} name="logout" />
+            <Icon style={NavigationLtrStyle.MenuIcon} name="home" />
           </View>
           <Text style={NavigationLtrStyle.FooterLabel}>{I18n.t('logout_button')}</Text>
         </View>

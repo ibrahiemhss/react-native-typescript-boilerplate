@@ -24,6 +24,7 @@ class MainScreen extends Component<Props, State> {
   constructor(props: Props) {
     super(props);
     this.state = {
+      // eslint-disable-next-line react/no-unused-state
       enthusiasmLevel: 1,
     };
   }
@@ -38,22 +39,22 @@ class MainScreen extends Component<Props, State> {
 
   render(): JSX.Element {
     return (
-        <>
-          <Header leftComponent={<HamburgerButton />} />
-          <SafeAreaView>
-            <ScrollView
-                contentInsetAdjustmentBehavior="automatic"
-                style={HomePageLtrStyle.scrollView}
-            >
-              <Image style={HomePageLtrStyle.logo} source={Images.logo} />
-              <Text>{`Hello ${I18n.t('home_screen.title')}`}</Text>
-              <RegularButton
-                  title={I18n.t('home_screen.camera')}
-                  onPress={() => debounce(selectLocalImage, 500)(this.onImagePicked)}
-              />
-            </ScrollView>
-          </SafeAreaView>
-        </>
+      <>
+        <Header leftComponent={<HamburgerButton />} />
+        <SafeAreaView>
+          <ScrollView
+            contentInsetAdjustmentBehavior="automatic"
+            style={HomePageLtrStyle.scrollView}
+          >
+            <Image style={HomePageLtrStyle.logo} source={Images.logo} />
+            <Text>{`Hello ${I18n.t('home_screen.title')}`}</Text>
+            <RegularButton
+              title={I18n.t('home_screen.camera')}
+              onPress={() => debounce(selectLocalImage, 500)(this.onImagePicked)}
+            />
+          </ScrollView>
+        </SafeAreaView>
+      </>
     );
   }
 }
